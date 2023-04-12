@@ -1,0 +1,75 @@
+@use '../variaveis'
+@use '../mixins'
+
+
+.technologies-container
+    margin-bottom: 1rem
+    
+    .technologies-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+
+        .technology-card
+            @include mixins.center
+            gap: 1rem
+            padding: 1rem
+            border: 1px solid #333
+            width: 30%
+            border-radius: variaveis.$card-border-radius
+            flex-direction: column
+
+            h3
+                color: variaveis.$text-color
+                margin-bottom: 1rem
+
+            svg
+                font-size: 6rem
+
+        #html
+            svg
+                color: #e44d26
+        #css
+            svg
+                color: #1572b6
+        #native
+            svg
+                color: #ffffff
+        #js 
+            svg
+                color: #f0db4f
+        #mysql 
+            svg
+                color: #00618a
+        #react
+            svg
+                color: #26c4f0
+
+        .container 
+            width: 100%
+            background-color: #cecdcd
+
+            .skills 
+                text-align: right
+                padding-right: 10px 
+                padding-top: 10px
+                padding-bottom: 10px
+                color: white
+            .html 
+                width: 90%
+                background-color: #e44d26
+            .css 
+                width: 90%
+                background-color: #1572b6
+            .js 
+                width: 50%
+                background-color: #dfc520
+            .native 
+                width: 60%
+                background-color: #727272
+            .sql
+                width: 80%
+                background-color: #00618a
+            .react
+                width: 55%
+                background-color: #26c4f0

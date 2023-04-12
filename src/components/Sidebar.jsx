@@ -3,16 +3,13 @@ import SocialNetworks from './SocialNetworks'
 import InformationContainer from './InformationContainer'
 import '../styles/components/sidebar.sass'
 
-
-
 const Sidebar = () => {
   return (
     <aside id="sidebar">
       <img src={Avatar} alt="Smoke Shakur" />
-      <p className="title">Desenvolvedor</p>
+      <p className="title">Web Developer </p>
       <SocialNetworks />
       <InformationContainer/>
-      <a href=""className='btn'>Download Curriculo</a>
     </aside>
   )
 }
