@@ -1,12 +1,4 @@
-import {
-  DiHtml5,
-  DiCss3,
-  DiJsBadge,
-  DiMysql,
-  DiReact,
-} from "react-icons/di";
-
-
+import {DiHtml5, DiCss3, DiJsBadge, DiMysql, DiReact} from "react-icons/di";
 import '../styles/components/technologiescontainer.sass'
 
 const technologies = [
