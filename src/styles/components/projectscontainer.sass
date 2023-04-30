@@ -9,38 +9,49 @@
         gap: 1.5rem
         display: flex
         flex-wrap: wrap
+        justify-content: center
 
         .projects-card
             @include mixins.center
             background: variaveis.$bg-color
-            padding: 1rem
-            width: 30%
+            padding: 1.5rem
+            width: 48%
             border-radius: variaveis.$card-border-radius
             border: 1px solid #333
-            display: flex
             flex-direction: column
 
+            h4
+                color: variaveis.$text-color
+                margin-bottom: 1rem
+                
             .imagem
                 @include mixins.center
                
                 img
-                    
-                    width: 90%
-                    height: 120px
+                    width: 100%
+                    height: 80%
                     border-radius: variaveis.$card-border-radius
                      
             .description
                 @include mixins.center
                 margin-top: 1rem
+                width: 90%
 
                 p
-                    font-weight: bold
-                    font-size: 1rem
+                    text-align: justify
+                    font-size: .8rem
+                    font-family: variaveis.$font-stack
 
             .button
                 @include mixins.center
+                
+                .btn
+                    background-color: black
+                    
 
-                .btn 
+            
+            
+                 
 
                 
                 

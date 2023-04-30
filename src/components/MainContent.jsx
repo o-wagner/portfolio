@@ -7,8 +7,9 @@ const MainContent = () => {
   return (
     <main id="main-content">
       <AboutContainer/>
-      <TechnologiesContainer/>
       <ProjectsContainer/>
+      <TechnologiesContainer/>
+      
     </main>
   )
 }
