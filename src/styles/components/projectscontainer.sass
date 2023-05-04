@@ -11,10 +11,11 @@
         flex-wrap: wrap
         justify-content: center
 
+ 
         .projects-card
             @include mixins.center
             background: variaveis.$bg-color
-            padding: 1.5rem
+            padding: 2rem
             width: 48%
             border-radius: variaveis.$card-border-radius
             border: 1px solid #333
@@ -22,31 +23,42 @@
 
             h4
                 color: variaveis.$text-color
-                margin-bottom: 1rem
+        
+            .proj-nome
+                align-items: center
+                text-align: center
+                width: 100%
+                height: 20%
+    
                 
             .imagem
                 @include mixins.center
                
                 img
                     width: 100%
-                    height: 80%
+                    height: 85%
                     border-radius: variaveis.$card-border-radius
+                    
                      
             .description
                 @include mixins.center
-                margin-top: 1rem
-                width: 90%
+                margin-top: .3rem
+                margin-bottom: .4rem
+                width: 80%
+                padding: 1rem
 
                 p
                     text-align: justify
-                    font-size: .8rem
+                    font-size: .9rem
                     font-family: variaveis.$font-stack
 
             .button
+                padding: 10px
                 @include mixins.center
                 
                 .btn
-                    background-color: black
+                    margin-bottom: 15px
+    
                     
 
             
