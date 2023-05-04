@@ -1,4 +1,4 @@
-import Avatar from '../img/Smoke.jpeg'
+import Avatar from '../img/smoke.jpeg'
 import SocialNetworks from './SocialNetworks'
 import InformationContainer from './InformationContainer'
 import '../styles/components/sidebar.sass'
