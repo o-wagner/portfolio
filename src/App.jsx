@@ -6,8 +6,7 @@ import "./styles/components/app.sass"
 function App() {
 
   return (
-    <div id="portfolio" style={{backgroundImage: `url(${Background})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
-      <h1>Wagner Oliveira</h1>
+    <div id="portfolio" style={{backgroundImage: `url(${Background})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", width:'100% ' }}>
       <Sidebar/>
       <MainContent/>
     </div>

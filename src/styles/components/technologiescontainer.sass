@@ -9,13 +9,14 @@
         display: flex
         flex-wrap: wrap
         gap: 1.5rem
+        @include mixins.center
 
         .technology-card
             @include mixins.center
             gap: 1rem
             padding: 1rem
             border: 1px solid #333
-            width: 30%
+            width: 15rem
             border-radius: variaveis.$card-border-radius
             flex-direction: column
 

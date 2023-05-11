@@ -10,14 +10,14 @@ const projects = [
     name: 'Quiz React',
     description: 'Projeto desenvolvido para um trabalho da faculdade, que consistiu em entender conceitos sobre React.',
     img: quiz,
-    link: 'https://github.com/o-wagner/Quiz'
+    link: 'https://quiz-gtiw0foev-o-wagner.vercel.app'
   },
   { 
     id: 2, 
     name: 'Gerador de QR CODE', 
     description: 'Página Web com gerador de QR CODE básico, projeto desenvolvido também para um trabalho da faculdade utilizando REACT.', 
     img: qrcode,
-    link: 'https://github.com/o-wagner/Gerador-de-QRCode' 
+    link: 'https://gerador-de-qr-code-pearl.vercel.app' 
   },
   { 
     id: 3,
@@ -25,7 +25,7 @@ const projects = [
      description: 'Página Web com um formulário que completa os campos de endereço após preencher o campo CEP.' +
      ' Projeto desenvolvido em REACT.', 
      img: buscacep ,
-     link: 'https://github.com/o-wagner/buscaCEP'
+     link: 'https://busca-cep-tan.vercel.app'
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const projects = [
     description: 'Tabela de classificação Brasileirão Serie A.' 
     + ' Projeto desenvolvido com React utilizando API de futebol de times brasileiros.',  
     img: brasileirao,
-    link: 'https://github.com/o-wagner/brasileirao'
+    link: 'https://brasileirao-cnyv3d6c6-o-wagner.vercel.app'
   },
   { 
     id: 5,
@@ -43,8 +43,6 @@ const projects = [
      img: myservices,
      link: 'https://github.com/o-wagner/my-services'
   },
- 
-  
 
 ]
 
@@ -53,6 +51,7 @@ const ProjectsContainer = () => {
   return (
     <section className="projects-container">
       <h2>Projetos</h2>
+      <p>Abaixo você pode conferir alguns de meus projetos</p>
       <div className="projects-grid">
         {projects.map((proj) => (
           <div className="projects-card" id={proj.id} key={proj.id}>
@@ -64,7 +63,7 @@ const ProjectsContainer = () => {
               <p >{proj.description}</p>
             </div>
             <div className="button">
-              <a href={proj.link} className="btn">Ver Repositório</a>
+              <a href={proj.link} className="btn">Visualizar Projeto</a>
             </div>
           </div>
         ))}

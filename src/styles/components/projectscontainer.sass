@@ -6,19 +6,21 @@
 
     .projects-grid
         background: variaveis.$bg-color
-        gap: 1.5rem
-        display: flex
-        flex-wrap: wrap
-        justify-content: center
+        gap: 1.2rem
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
 
         .projects-card
             @include mixins.center
             background: variaveis.$bg-color
             padding: 1.5rem
-            width: 48%
+            width: 100%
             border-radius: variaveis.$card-border-radius
             border: 1px solid #333
             flex-direction: column
+            grid-column: 1 / 4
+
 
             h4
                 color: variaveis.$text-color
@@ -44,6 +46,7 @@
 
             .button
                 @include mixins.center
+                text-align: center
                 
                 .btn
                     background-color: black
